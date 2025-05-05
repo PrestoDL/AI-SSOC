@@ -1,0 +1,76 @@
+양쪽 혹은 십자(사거리) 도로에서 여러 대의 차가 교차할 때, overall time이 가장 짧은 경우는? (greedy가 아니라면?)
+- 서로간의 이동 시간 또한 고려해야 하므로, 대각선 이동은 배제. (manhattan distance)
+- Adaptive A* 적용 시 유의미한 결과가 있는지?
+- 특정 거리까지는 cost의 감소가 적용되지만, 기준을 넘으면(충돌 위험이 있으면) cost를 늘려 거리를 유지하도록 함
+
+
+객체마다 map을 그릴 생각보다는(step마다 1칸씩 움직이며 path를 찾기보다는),
+map 전체의 입장에서 객체들을 관리하는 느낌으로 움직인다.
+-> map 입장에서 제어하게 되면, 후에 객체가 나가거나 새로 들어올 때 큰 연산이 필요가 없음.
+
+각 객체들이 가져야 할 정보 : 현재의 xy, path xy Stack
+
+
+__init__
+
+void mapping() - map을 지정. 노드마다의 값을 모두 지정. (h 제외)
+void addObj() - 객체들을 추가. parameter로는 시작 시간, start_xy, goal_xy 포함.
+객체들을 queue에 저장할 것인지? 혹은, for 안에 무작위 생성으로 내버려둬도 된다.
+
+for (range 200) - time loop 시작. step 횟수는 200이 되든 20000이 되든 상관없음
+{
+ if (객체의 시작 시간이 되었다면)
+ {
+  void aStar() - 시작 시간이 된 객체에 대해 A* 실행(reduction value 적용?)
+  void checkShortest() - 알고리즘 실행 후 path를 Stack으로 저장 (goal 노드부터 꺼내지게 됨)
+  void maprefresh() - map의 상태를 초기 상태로 전환
+
+  if (void collisioncheck()) - 해당 객체의 lifetime동안 다른 객체와의 충돌이 발생하는지 체크. Stack을 copy하여 진행
+  { // 충돌이 발생한다면 // 해당 객체를 A, 다른 객체를 B라 명명
+   while(path failure) // B 고정
+   {
+    A의 Stack을 clear, B의 Stack을 충돌 지점까지 Pop 후 해당 위치를 벽으로 지정 (이 가변 벽 또한 Stack에 투입)
+    이후 A에 대해 A* 실행, 반복될수록 충돌 지점과 가까운 벽을 하나씩 지워 감
+   }
+   while(collision)
+   {
+    찾은 path 기반으로 collision check
+    충돌이 있다면, 충돌이 일어나지 않는 지점까지 A를 한칸씩 hold
+   }
+
+   두 path 중 더 빠른 것으로 원본 Stack 변경
+  }
+ }
+}
+
+
+void addAgent()
+{
+ 현재 map에 Agent 추가
+ while(Agent가 goal에 도달할 때까지)
+ {
+  if (Astar() == 1) // ShortestPath 시행, Agent의 Stack에 goal까지의 path가 들어있어야함
+  {
+   CollisionCheck() // Collision 발생 시, Agent의 현재 위치 저장, Collision지점 벽으로 취급 후 break
+  }
+  else
+  {
+   HoldAgent() // Agent의 현재 위치에서 Hold
+  }
+ }
+}
+
+
+
+(A와 B의 충돌이 일어난다면, 두 가지 case를 만들어 비교해본다.)
+-> A의 path를 그대로 두고, t=0일 때의 A의 남은 path를 벽으로 취급 후 B에서 A* 실행.
+-> A*가 길을 찾지 못한 경우(길이 막혔을 경우), t=1일 때의 A의 남은 path를 벽으로 취급 후 B에서 A* 실행.
+...
+-> A*가 길을 찾은 경우, 찾은 path를 기반으로 시뮬 진행, 충돌이 일어나지 않는 지점까지 B를 hold.
+
+A와 B의 순서를 바꾼 case도 계산. 이후 비교하여 더 좋은 것을 취함
+
+
+Result : map과 agent의 정보를 random하게 취급 후, 
+
+논문 : 결과가 있든 없든 report한다. 2024-03-20까지 draft 제출

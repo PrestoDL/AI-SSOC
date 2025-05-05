@@ -1,0 +1,6 @@
+{signal: [
+  {name: 'clk',   wave: 'lH.l.H.l.H.l'},
+  {name: 'reset', wave: '1..0....1...'},
+  {name: 'Q',     wave: '=..3.....=..', data: ['input data', 'reset', 'input data']}
+  
+]}

@@ -1,0 +1,52 @@
+
+
+-ABSTRACT
+
+With the development of autonomous driving, multi-agent pathfinding is necessary. Because a little delay can make collision to median strip or other vehicle, pathfinding process must be fast and immediate. Many autonomous vehicle companies use the cloud for central processing because of complicate calculation, but using cloud can make delays and disconnection. So, edge-level pathfinding must also be executed together. But if every edge-level pathfinding goes greedy, traffic is paralyzed and overall travel time will be increased.
+One of the suitable methods is using A* search algorithm. Compared to dijkstra algorithm, A* can't find the shortest path always, but it is much faster than dijkstra. But there will still be more ways to reduce calculation time, and there is a tendency that the shortest path tends to be near the wall. In this paper, let's make the algorithm explore more nodes near the wall and get the results.
+
+
+
+-INTRO
+
+In multi-agent pathfinding algorithm, we usually use A* algorithm or modified algorithm of it. A* tends to search unnecessary nodes when it encounters walls, and the shortest path tends to stick to walls. So, I present The Obstacle-Aware Adaptive A* that prefers to search nodes near walls. It can search more important nodes than ordinary A*, although the accuracy of the shortest distance can be reduced, the calculation time can be greatly reduced. If adaptive A* is applied in autonomous vehicle situation, it can reduce time in edge level calculation, reduce accident rate.
+
+
+
+
+-PROPOSED ARCHITECTURE
+
+[Fig.1 - Ordinary A* pathfinding]
+
+Ordinary A* is using a weighted graph, allocating weight f(n) to every nodes(f(n) = g(n) + h(n), g(n) is cost from start to the node, h(n) is estimated cost from the node to goal), searching lowest cost nodes and continuing until search the goal node. The Adaptive A* is algorithm based on A*, reduces g(n) by an appropriate ratio(I'll call this reduction value) when the node is near walls, so the algorithm prefers important nodes.
+
+[Fig.2 - Compare Ordinary A* and the Adaptive A* with 0.7 reduction value, square is wall, diamond is start point, star is goal point, dot is searched node, and arrows form the final path.]
+
+Fig.2 shows result of ordinary A* and the adaptive A* with 0.7 reduction value in specific map. Compared to ordinary A*, adaptive A* has reduced calculation time, but final path's distance was increased.
+Let us generalize this tendency. I executed algorithm adjusting wall density(percentage of walls in entire the map) and reduction value. Each execution was run 100,000 times in a randomly generated grid of size 100X100, measured total calculation time and average distance of final paths(I'll call this cost).
+
+[Fig.3-1, 3-2 - Adaptive A* result : calculation time and average cost, the greener the lower, and black region is the area exceeding 10,000 seconds]
+
+Fig.3-1 shows percentage of calculation time by reduction value(x) and wall density(y). As you see, a appropriate reduction value can greatly reduce calculation time while cost is slightly increased. Fig.3-2 shows percentage of average costs by reduction value(x) and wall density(y). As the reduction value increases, costs increase. It seems that higher reduction value makes more distortion. Considering these factors, appropriate reduction value can save calculation time drastically with a small increase in cost.
+Now, let us apply adaptive A* in multi-agent pathfinding(MAPF) situation. MAPF algorithm is more complicated than just executing a single algorithm multiple times, because of the collision between agents.
+If every agents going greedy, because of the collision, overall time will rather be increased. Many algorithms already exists for MAPF, but since I need to apply A* and focus on reducing calculation time, I will use a relatively fast and less optimal algorithm that treating other agents as moving walls. I'll call this dodging A* algorithm.
+
+[Fig.4 - dodging A* algorithm]
+
+I excluded diagonal movement of agents because of the uniformization of unit length. When an agent is added to the map, A* is executed for that agent to create a temporary path, compared with the paths of other agents, and whether there is a conflict is calculated over time. If there is no collision, the path of the agent is confirmed. If there is a collision, agent assume that there is a wall at the collision point and run A* again, check for the collision. If A* cannot find a path due to a created wall, it holds one step in its place. Afterwards, A* is executed again and collisions are checked between the changed paths of other agents over time. Unless the map itself is blocked, all agents can be able to avoid collisions and reach their goals.
+I applied the adaptive A* in this MAPF algorithm adjusting reduction value. Each execution was run 1,000 times in a randomly generated grid of size 100X100, 20% wall density and 50 agents, measured total calculation time and overall cost(time that every agents reach the goal).
+
+[Fig.5 - result of MAPF with adaptive A*]
+
+Although the result is not very noticeable, dodging adaptive A* algorithm tend to be similar to the single adaptive A*. Fig.5 shows percentage of calculation time by reduction value(x). Reduction value between 0.3~1.0 can reduce calculation time drastically. And as the reduction value increases, costs tend to increase. Considering these factors, appropriate reduction value can also save calculation time drastically in MAPF situation.
+
+
+
+
+
+-CONCLUSION
+
+Applying adaptive A* with appropriate reduction value to ordinary single A* and dodging A* in random map can reduce execution time nearly 80% while increase overall cost nearly 10%. Unless distance is very important, applying adaptive A* rather than ordinary A* can be efficient. If adaptive A* is applied to autonomous vehicle situation, calculation time will be reduced and accident rate can be reduced also.
+
+
+
