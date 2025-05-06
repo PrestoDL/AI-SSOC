@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-08-02 01:08:57 by Eclipse SUMO netedit Version 1.20.0
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- TAZs -->
+    <taz id="taz_0" shape="490.96,622.12 451.56,549.12 544.26,553.76 490.96,622.12" color="blue">
+        <tazSource id="-E22" weight="1.00"/>
+        <tazSink id="-E22" weight="1.00"/>
+        <tazSource id="E22" weight="1.00"/>
+        <tazSink id="E22" weight="1.00"/>
+    </taz>
+    <taz id="taz_1" shape="998.49,633.71 940.55,557.23 1047.16,549.12 998.49,633.71" color="blue">
+        <tazSource id="-E23" weight="1.00"/>
+        <tazSink id="-E23" weight="1.00"/>
+        <tazSource id="E23" weight="1.00"/>
+        <tazSink id="E23" weight="1.00"/>
+    </taz>
+    <taz id="taz_10" shape="500.52,-679.21 449.16,-583.44 578.87,-592.15 500.52,-679.21" color="blue">
+        <tazSource id="-E30" weight="1.00"/>
+        <tazSink id="-E30" weight="1.00"/>
+        <tazSource id="E30" weight="1.00"/>
+        <tazSink id="E30" weight="1.00"/>
+    </taz>
+    <taz id="taz_11" shape="-66.23,-307.47 25.18,-367.54 23.44,-243.92 -66.23,-307.47" color="blue">
+        <tazSource id="-E29" weight="1.00"/>
+        <tazSink id="-E29" weight="1.00"/>
+        <tazSource id="E29" weight="1.00"/>
+        <tazSink id="E29" weight="1.00"/>
+    </taz>
+    <taz id="taz_12" shape="-58.39,-4.51 19.96,-48.04 25.18,79.07 -58.39,-4.51" color="blue">
+        <tazSource id="-E0" weight="1.00"/>
+        <tazSink id="-E0" weight="1.00"/>
+        <tazSource id="E0" weight="1.00"/>
+        <tazSink id="E0" weight="1.00"/>
+    </taz>
+    <taz id="taz_13" shape="-71.45,291.49 20.83,232.29 21.70,376.81 -71.45,291.49" color="blue">
+        <tazSource id="-E21" weight="1.00"/>
+        <tazSink id="-E21" weight="1.00"/>
+        <tazSource id="E21" weight="1.00"/>
+        <tazSink id="E21" weight="1.00"/>
+    </taz>
+    <taz id="taz_2" shape="1500.23,632.55 1441.13,544.49 1565.12,546.81 1500.23,632.55" color="blue">
+        <tazSource id="-E24" weight="1.00"/>
+        <tazSink id="-E24" weight="1.00"/>
+        <tazSource id="E24" weight="1.00"/>
+        <tazSink id="E24" weight="1.00"/>
+    </taz>
+    <taz id="taz_3" shape="1999.65,609.38 1953.30,537.54 2039.04,542.17 1999.65,609.38" color="blue">
+        <tazSource id="-E25" weight="1.00"/>
+        <tazSink id="-E25" weight="1.00"/>
+        <tazSource id="E25" weight="1.00"/>
+        <tazSink id="E25" weight="1.00"/>
+    </taz>
+    <taz id="taz_4" shape="2543.10,301.15 2468.94,356.77 2473.57,239.74 2543.10,301.15" color="blue">
+        <tazSource id="-E26" weight="1.00"/>
+        <tazSink id="-E26" weight="1.00"/>
+        <tazSource id="E26" weight="1.00"/>
+        <tazSink id="E26" weight="1.00"/>
+    </taz>
+    <taz id="taz_5" shape="2576.70,3.35 2470.10,68.24 2470.10,-74.28 2576.70,3.35" color="blue">
+        <tazSource id="-E4" weight="1.00"/>
+        <tazSink id="-E4" weight="1.00"/>
+        <tazSource id="E4" weight="1.00"/>
+        <tazSink id="E4" weight="1.00"/>
+    </taz>
+    <taz id="taz_6" shape="2569.75,-302.55 2464.30,-230.71 2472.41,-370.92 2569.75,-302.55" color="blue">
+        <tazSource id="-E27" weight="1.00"/>
+        <tazSink id="-E27" weight="1.00"/>
+        <tazSource id="E27" weight="1.00"/>
+        <tazSink id="E27" weight="1.00"/>
+    </taz>
+    <taz id="taz_7" shape="2000.81,-691.89 1931.28,-589.92 2052.95,-589.92 2000.81,-691.89" color="blue">
+        <tazSource id="-E28" weight="1.00"/>
+        <tazSink id="-E28" weight="1.00"/>
+        <tazSource id="E28" weight="1.00"/>
+        <tazSink id="E28" weight="1.00"/>
+    </taz>
+    <taz id="taz_8" shape="1499.07,-686.10 1427.23,-554.00 1584.82,-555.16 1499.07,-686.10" color="blue">
+        <tazSource id="-E32" weight="1.00"/>
+        <tazSink id="-E32" weight="1.00"/>
+        <tazSource id="E32" weight="1.00"/>
+        <tazSink id="E32" weight="1.00"/>
+    </taz>
+    <taz id="taz_9" shape="1008.07,-660.06 941.91,-562.55 1048.12,-561.68 1008.07,-660.06" color="blue">
+        <tazSource id="-E31" weight="1.00"/>
+        <tazSink id="-E31" weight="1.00"/>
+        <tazSource id="E31" weight="1.00"/>
+        <tazSink id="E31" weight="1.00"/>
+    </taz>
+</additional>
