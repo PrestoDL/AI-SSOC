@@ -1,0 +1,1 @@
+duarouter -n ql2.complicate.net.xml -r complicate.rou.xml --taz-files taz_complicate.add.xml --weight-files weights_complicate.xml -o complicate.static.rou.xml

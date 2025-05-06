@@ -1,0 +1,1 @@
+Sumo\bin\sumo-gui straight.sumocfg
