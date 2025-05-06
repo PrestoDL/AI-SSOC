@@ -1,0 +1,26 @@
+﻿  main.c
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\stack.h(48,9): warning C4033: 'Pop'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\stack.h(62,9): warning C4033: 'Top'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\queue.h(32,9): warning C4033: 'CreateQueue'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\queue.h(102,9): warning C4033: 'QueueFront'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\queue.h(112,9): warning C4033: 'QueueRear'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(24,25): warning C4033: 'mapping'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(28,32): warning C4033: 'mapping'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(104,33): warning C4033: 'checkShortest'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(245,51): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(304,31): warning C4033: 'avoidCollision'은(는) 값을 반환해야 합니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(303,17): warning C4101: 'agentpath' :참조되지 않은 지역 변수입니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(413,36): warning C4047: '함수': 'int'의 간접 참조 수준이 'Queue *'과(와) 다릅니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(413,36): warning C4024: 'aStar': 형식 및 실제 매개 변수 3의 형식이 서로 다릅니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(413,67): warning C4244: '함수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(413,77): warning C4020: 'aStar': 실제 매개 변수가 너무 많습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(424,11): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\stack.h(66,1): warning C4715: 'Top': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(116,1): warning C4715: 'checkShortest': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(82,1): warning C4715: 'mapping': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\queue.h(118,1): warning C4715: 'QueueRear': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\queue.h(108,1): warning C4715: 'QueueFront': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\stack.h(58,1): warning C4715: 'Pop': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\queue.h(37,1): warning C4715: 'CreateQueue': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\main.c(385,1): warning C4715: 'avoidCollision': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  MAPF.vcxproj -> C:\SVN\2024-03-06_YWJEON\04_development\20240329\MAPF\x64\Debug\MAPF.exe

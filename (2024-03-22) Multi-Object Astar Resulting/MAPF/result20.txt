@@ -1,0 +1,105 @@
+
+Reduction Value : 0.0
+Total Costs : 14645
+Total Running Time : 180.222 s
+
+
+Reduction Value : 0.1
+Total Costs : 14902
+Total Running Time : 39.468 s
+
+
+Reduction Value : 0.2
+Total Costs : 15165
+Total Running Time : 37.541 s
+
+
+Reduction Value : 0.3
+Total Costs : 15183
+Total Running Time : 27.053 s
+
+
+Reduction Value : 0.4
+Total Costs : 15342
+Total Running Time : 24.512 s
+
+
+Reduction Value : 0.5
+Total Costs : 15341
+Total Running Time : 25.465 s
+
+
+Reduction Value : 0.6
+Total Costs : 15308
+Total Running Time : 25.764 s
+
+
+Reduction Value : 0.7
+Total Costs : 15559
+Total Running Time : 20.552 s
+
+
+Reduction Value : 0.8
+Total Costs : 15772
+Total Running Time : 22.759 s
+
+
+Reduction Value : 0.9
+Total Costs : 15704
+Total Running Time : 23.413 s
+
+
+Reduction Value : 1.0
+Total Costs : 15680
+Total Running Time : 23.146 s
+
+
+Reduction Value : 1.1
+Total Costs : 16120
+Total Running Time : 25.556 s
+
+
+Reduction Value : 1.2
+Total Costs : 16230
+Total Running Time : 27.784 s
+
+
+Reduction Value : 1.3
+Total Costs : 16256
+Total Running Time : 28.029 s
+
+
+Reduction Value : 1.4
+Total Costs : 16433
+Total Running Time : 24.551 s
+
+
+Reduction Value : 1.5
+Total Costs : 16666
+Total Running Time : 26.356 s
+
+
+Reduction Value : 1.6
+Total Costs : 16442
+Total Running Time : 25.351 s
+
+
+Reduction Value : 1.7
+Total Costs : 17032
+Total Running Time : 26.052 s
+
+
+Reduction Value : 1.8
+Total Costs : 16903
+Total Running Time : 23.701 s
+
+
+Reduction Value : 1.9
+Total Costs : 18753
+Total Running Time : 24.969 s
+
+
+Reduction Value : 2.0
+Total Costs : 21587
+Total Running Time : 28.394 s
+

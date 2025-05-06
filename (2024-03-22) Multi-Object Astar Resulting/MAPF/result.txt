@@ -1,0 +1,52 @@
+
+
+==========================================================================================
+Agents : 5
+Total Costs : 1144646
+Total Running Time : 97.196 s
+
+
+Agents : 10
+Total Costs : 1279023
+Total Running Time : 207.259 s
+
+
+Agents : 15
+Total Costs : 1350325
+Total Running Time : 328.774 s
+
+
+Agents : 20
+Total Costs : 1396598
+Total Running Time : 454.697 s
+
+
+Agents : 25
+Total Costs : 1425682
+Total Running Time : 608.269 s
+
+
+Agents : 30
+Total Costs : 1456327
+Total Running Time : 770.712 s
+
+
+Agents : 35
+Total Costs : 1476225
+Total Running Time : 938.900 s
+
+
+Agents : 40
+Total Costs : 1492844
+Total Running Time : 1130.266 s
+
+
+Agents : 45
+Total Costs : 1508432
+Total Running Time : 1336.776 s
+
+
+Agents : 50
+Total Costs : 1521293
+Total Running Time : 1677.794 s
+

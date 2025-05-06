@@ -1,0 +1,34 @@
+﻿  main.c
+C:\Users\gamem\source\repos\MultiObjectAstar\stack.h(48,9): warning C4033: 'Pop'은(는) 값을 반환해야 합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Users\gamem\source\repos\MultiObjectAstar\stack.h(62,9): warning C4033: 'Top'은(는) 값을 반환해야 합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Users\gamem\source\repos\MultiObjectAstar\queue.h(30,9): warning C4033: 'CreateQueue'은(는) 값을 반환해야 합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Users\gamem\source\repos\MultiObjectAstar\queue.h(100,9): warning C4033: 'QueueFront'은(는) 값을 반환해야 합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Users\gamem\source\repos\MultiObjectAstar\queue.h(110,9): warning C4033: 'QueueRear'은(는) 값을 반환해야 합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(23,22): warning C4033: 'mapping'은(는) 값을 반환해야 합니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(27,26): warning C4033: 'mapping'은(는) 값을 반환해야 합니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(103,27): warning C4033: 'checkShortest'은(는) 값을 반환해야 합니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(242,33): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(224,8): warning C4101: 'time' :참조되지 않은 지역 변수입니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(301,28): warning C4033: 'avoidCollision'은(는) 값을 반환해야 합니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(300,14): warning C4101: 'agentpath' :참조되지 않은 지역 변수입니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(406,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(421,45): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\stack.h(58,1): warning C4715: 'Pop': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\stack.h(66,1): warning C4715: 'Top': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\queue.h(35,1): warning C4715: 'CreateQueue': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\queue.h(106,1): warning C4715: 'QueueFront': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\queue.h(116,1): warning C4715: 'QueueRear': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(115,1): warning C4715: 'checkShortest': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(81,1): warning C4715: 'mapping': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\gamem\source\repos\MultiObjectAstar\main.c(382,1): warning C4715: 'avoidCollision': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  MultiObjectAstar.vcxproj -> C:\Users\gamem\source\repos\MultiObjectAstar\x64\Debug\MultiObjectAstar.exe
