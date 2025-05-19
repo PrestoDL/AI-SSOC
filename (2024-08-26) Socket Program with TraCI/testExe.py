@@ -1,32 +1,6 @@
 import traci
 import sumolib
 
-'''
-def update_lane_weights():
-    edge_ids = traci.edge.getIDList()
-    for edge_id in edge_ids:
-        lane_count = traci.edge.getLaneNumber(edge_id)
-        for i in range(lane_count):
-            lane_id = f"{edge_id}_{i}"
-            stopped_vehicle_count = sum(1 for v in traci.lane.getLastStepVehicleIDs(lane_id) if traci.vehicle.getSpeed(v) < 5)
-            if stopped_vehicle_count > 0:
-                # Reduce speed limit to increase lane cost
-                new_speed = max(1.0, 300 / (30 + stopped_vehicle_count))  # Example: base speed 50 km/h reduced based on vehicle count
-                traci.lane.setMaxSpeed(lane_id, new_speed)
-            else:
-                traci.lane.setMaxSpeed(lane_id, 10)
-    
-    # Re-route all vehicles based on updated travel times
-    for vid in traci.vehicle.getIDList():
-        traci.vehicle.rerouteTraveltime(vid)
-'''
-
-
-
-
-
-
-
 
 
 def update_edge_weights(routeSpeed):
