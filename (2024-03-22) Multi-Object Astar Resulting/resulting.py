@@ -54,51 +54,6 @@ plt.show()
 '''
 
 
-
-
-'''
-file_path = 'result2.txt'
-file = open(file_path, 'r')
-
-x_range, y_range = map(int, (file.readline()).split())
-lines = file.readlines()
-z_range = int(len(lines) / y_range)
-timestamp = [[[int(lines[k * y_range + j].split()[i]) for i in range(x_range)] for j in range(y_range)] for k in range(z_range)]
-file.close()
-
-
-fig, ax = plt.subplots()
-def update(i):
-    timestamp[i][12][12] = -100
-    ax.cla()
-    ax.matshow(timestamp[i])
-
-ani = animation.FuncAnimation(fig, update, frames = z_range, interval = 100, repeat_delay = 2000)
-animation.Animation.save(ani, "test3.gif")
-plt.show()
-'''
-
-
-
-
-'''
-file_path = 'result3.txt'
-file = open(file_path, 'r')
-
-x_range, y_range = map(int, (file.readline()).split())
-lines = file.readlines()
-z_range = int(len(lines) / y_range)
-timestamp = [[[int(lines[k * y_range + j].split()[i]) for i in range(x_range)] for j in range(y_range)] for k in range(z_range)]
-file.close()
-
-
-fig, ax = plt.subplots()
-def update(i):
-    timestamp[i][9][5] = -100
-    ax.cla()
-    ax.matshow(timestamp[i])
-
-ani = animation.FuncAnimation(fig, update, frames = z_range, interval = 100, repeat_delay = 2000)
 animation.Animation.save(ani, "test3.gif")
 plt.show()
 '''
