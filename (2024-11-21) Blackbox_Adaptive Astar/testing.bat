@@ -1,1 +1,2 @@
-.\source\resultingAdaptiveAstar.bat
+cd source
+resultingAdaptiveAstar.bat
